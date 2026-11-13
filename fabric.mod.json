@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "trimmer",
+  "version": "${version}",
+  "name": "Trimmer",
+  "description": "Small, safe client-side CPU and RAM savers that sit alongside Sodium, Lithium, FerriteCore and friends: background FPS throttling, a particle spawn budget, and post-session heap cleanup.",
+  "authors": ["Trimmer contributors"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.trimmer.TrimmerClient"]
+  },
+  "mixins": ["trimmer.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
